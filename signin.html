@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="include/bootstrap.min.css">
+    <title>Signin</title>
+	<style>
+body{
+background-color: #f2f2f2;
+background-size:cover;
+background-repeat: no-repeat;
+background-position:center;
+background-attachment:fixed;
+}
+form{
+max width:300px;
+margin:0 auto;
+padding: 20px;
+background-color: #fff;
+border: 1px solid #ddd;
+border_radius: 5px:
+}
+.box{
+display:flex;
+justify-content: center;
+align-item: center;
+min-height: 90vh;
+}
+.content{
+width: 350px;
+display=flex;
+flex-direction:column;
+padding:0 15px 0 15px
+}
+label{
+display:block;
+margin_bottom: 10px;
+color: #666;
+}
+input[type="text"], input[type="password"],input[type="number"],input[type="email"]{
+width: 80%;
+padding: 10px;
+border: 1px solid #ddd;
+border-radius: 4px;
+}
+input[type="submit"]{
+width: 100%;
+padding: 10px;
+background-color: #4caf50;
+color: #fff;
+border-radius: 4px;
+cursor:pointer;
+}
+header{
+font-size: 40px; 
+display= flex; 
+justify-content:center; 
+padding: 10px 0 10px 0;
+}
+</style>
+</head>
+<body>
+<div class="box">
+<div class="content">
+<div class="top-header">
+<header> Register </header> <br/>
+</div>
+<form method="POST" action="insert.php">
+<label for="user_id">User ID:</label>
+<input type="number" name="user_id" id="user_id" placeholder="enter user ID" required/> <br /><br/>
+<label for="name">Full Name:</label>
+<input type="text" name="name" id="name" placeholder="name" required/><br /><br/>
+<label for="email">Email:</label>
+<input type="email" name="email" id="email" placeholder="enter email" required/> <br /><br/>
+<label for="phno">Phone Number:</label>
+<input type="number" name="phno" id="phno" placeholder="enter phone number" required/><br /><br/>
+<label for="pwd">Password:</label>
+<input type="password" name="pwd" id="pwd" placeholder="enter password" required/><br /><br/>
+<input type="submit" value="Signin"> <br /> <br /> <br /> <br /><br/>
+<a href="login.html"> Back to login page</a><br/>
+</form>
+</div>
+</div>
+</body>
+</html>

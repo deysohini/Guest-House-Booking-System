@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="include/bootstrap.min.css">
+    <title>Login</title>
+	<style>
+    body{
+      background-color: #f2f2f2;
+      background-size:cover;
+      background-repeat: no-repeat;
+      background-position:center;
+      background-attachment:fixed;
+      }
+      form{
+      max-width:300px;
+      margin:0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius:4px;
+      }
+      .box{
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 90vh;
+      }
+      .container{
+      width: 350px;
+      flex-direction:column;
+      padding:0 15px 0 15px
+      }
+      header{
+        color: #000000;
+        font-size: 45px;
+        display: flex;
+        justify-content: center;
+        padding:10px 0 10px 0;
+      }
+      label{
+      display:block;
+      margin-bottom: 10px;
+      color: #666;
+      }
+      input[type="text"], input[type="password"],input[type="number"],input[type="email"]{
+      width: 90%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius:30px;
+      }
+      input[type="submit"]{
+      width: 100%;
+      padding: 10px;
+      background-color: #4caf50;
+      color: #fff;
+      border-radius: 30px;
+      cursor:pointer;
+      }
+</style>
+  </head>
+  <body>
+<div class="box">
+<div class="container">
+<header> Login </header><br/>
+<form method="POST" action="insertlog.php">
+<label for="user_id">User ID:</label>
+<input type="text" name="user_id" id="user_id" placeholder="user id" required/> <br /> <br />  
+<label for="pwd">Password:</label>
+<input type="password" name="pwd" id="pwd" placeholder="password" required/>  <br /> <br />
+<input type="submit" value="Submit"> <br /> <br />
+<a href="signin.html"> Don't have a account ? </a><br /> <br />
+<a href="adminlogin.html"> Admin Login </a>
+</form>
+</div>
+</div>
+  </body>
+</html>
+
